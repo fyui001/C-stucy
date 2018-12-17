@@ -37,7 +37,7 @@ int mywrite(FILE *p){
       .input_format = "%d",
       .input_mem_size = sizeof(int),
       .input_type =  "int",
-      .input_val_format = "%-15d",
+      .input_val_format = "%-15d\n",
       .input_ptr = NULL,
     },
   };

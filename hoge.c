@@ -11,7 +11,7 @@ typedef struct input_data {
   intptr_t input_ptr;
 } data;
 
-/*  */
+/* メモリ解放! */
 int mem_free(data *d, int n){
   int i;
   for(i = 0; i < n; i++){

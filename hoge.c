@@ -114,10 +114,11 @@ int main(){
   }
 
   if(strcmp(mode, "a") == 0){
-    while(!mywrite(fp));
+    while(!mywrite(fp)); /* 書き込む関数呼び出し */
     fclose(fp);
-  }else if(strcmp(mode, "r") == 0){
-    while(!myread(fp));
+  }
+  if(strcmp(mode, "r") == 0){
+    while(!myread(fp)); /* 読み込み関数呼び出し */
     fclose(fp);
   }
 
